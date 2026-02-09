@@ -18,11 +18,15 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <a href="#" className="flex items-center space-x-2">
-            <div className="w-8 h-8 bg-primary-500 rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-lg">E</span>
-            </div>
-            <span className="font-bold text-xl text-foreground">Etheus Systems</span>
+          <a href="#" className="flex items-center group">
+            <span className="text-xl font-bold tracking-tight">
+              <span className="bg-gradient-to-r from-gray-100 via-gray-300 to-gray-100 bg-clip-text text-transparent">
+                Etheus
+              </span>
+              <span className="text-gray-400 font-light tracking-[0.2em] text-sm ml-1">
+                SYSTEMS
+              </span>
+            </span>
           </a>
 
           {/* Desktop Navigation */}

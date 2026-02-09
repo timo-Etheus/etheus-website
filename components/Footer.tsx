@@ -28,11 +28,15 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12">
           {/* Brand Column */}
           <div className="lg:col-span-2">
-            <a href="#" className="flex items-center space-x-2 mb-4">
-              <div className="w-8 h-8 bg-primary-500 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-lg">E</span>
-              </div>
-              <span className="font-bold text-xl">Etheus Systems</span>
+            <a href="#" className="flex items-center mb-4">
+              <span className="text-xl font-bold tracking-tight">
+                <span className="bg-gradient-to-r from-gray-100 via-gray-300 to-gray-100 bg-clip-text text-transparent">
+                  Etheus
+                </span>
+                <span className="text-gray-400 font-light tracking-[0.2em] text-sm ml-1">
+                  SYSTEMS
+                </span>
+              </span>
             </a>
             <p className="text-secondary-400 mb-6 max-w-sm">
               Transforming ideas into digital reality. We build innovative software
