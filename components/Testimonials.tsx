@@ -1,22 +1,25 @@
 const testimonials = [
   {
     quote: "Etheus Systems transformed our legacy infrastructure into a modern, scalable platform. Their expertise and dedication exceeded our expectations.",
-    author: "Jennifer Walsh",
-    title: "CTO, TechCorp Industries",
+    author: "Jennifer W.",
+    initials: "JW",
+    title: "CTO",
     avatar: "bg-gradient-to-br from-blue-500 to-cyan-600",
     rating: 5,
   },
   {
     quote: "The mobile app they built for us increased our customer engagement by 40%. Professional team, on-time delivery, and outstanding quality.",
-    author: "Michael Torres",
-    title: "CEO, RetailPlus",
+    author: "Michael T.",
+    initials: "MT",
+    title: "CEO",
     avatar: "bg-gradient-to-br from-purple-500 to-pink-600",
     rating: 5,
   },
   {
     quote: "Working with Etheus was a game-changer. They understood our vision and delivered a solution that perfectly aligned with our business goals.",
-    author: "Amanda Foster",
-    title: "Director of Operations, HealthFirst",
+    author: "Amanda F.",
+    initials: "AF",
+    title: "Director of Operations",
     avatar: "bg-gradient-to-br from-green-500 to-emerald-600",
     rating: 5,
   },
@@ -69,7 +72,7 @@ export default function Testimonials() {
               <div className="flex items-center">
                 <div className={`w-12 h-12 ${testimonial.avatar} rounded-full flex items-center justify-center mr-4`}>
                   <span className="text-lg font-bold text-white">
-                    {testimonial.author.split(' ').map(n => n[0]).join('')}
+                    {testimonial.initials}
                   </span>
                 </div>
                 <div>
