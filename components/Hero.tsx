@@ -1,7 +1,20 @@
+import Image from "next/image";
+
 export default function Hero() {
   return (
-    <section className="min-h-screen flex items-center justify-center pt-16 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-4xl mx-auto text-center">
+    <section className="min-h-screen flex items-center justify-center pt-16 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
+      {/* Background Image */}
+      <div className="absolute inset-0 z-0">
+        <Image
+          src="/images/hero-background.webp"
+          alt=""
+          fill
+          className="object-cover opacity-20"
+          priority
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-background via-background/80 to-background" />
+      </div>
+      <div className="max-w-4xl mx-auto text-center relative z-10">
         {/* Badge */}
         <div className="inline-flex items-center px-4 py-2 rounded-full bg-primary-50 text-primary-600 text-sm font-medium mb-8">
           <span className="w-2 h-2 bg-primary-500 rounded-full mr-2 animate-pulse"></span>
